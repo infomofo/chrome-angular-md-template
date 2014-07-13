@@ -42,6 +42,9 @@ angular.module('genericChromeMdApp')
         }]
       });
     };
+
+
+    $scope.selectedIndex = 0;
   })
   .controller('LeftCtrl', function($scope, $timeout, $materialSidenav) {
     var nav;
