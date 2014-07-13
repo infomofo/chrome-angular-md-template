@@ -51,7 +51,7 @@ module, you'll have to [build it yourself](https://github.com/angular/material#d
    2. ``npm install``
    3. ``bower install``
    4. ``npm install gulp``
-   5. ``gulp build
+   5. ``gulp build``
 
 4. run ``cca pre-prepare`` to initialize cordova plugins
 5. run ``cca platform add ios`` to add ios platform to project
