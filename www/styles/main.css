@@ -2,3 +2,10 @@
 .body {
   margin-top:60px;
 }
+
+.menu-item {
+  padding: 15px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  text-overflow: ellipsis;
+}
