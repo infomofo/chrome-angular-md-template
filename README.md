@@ -4,12 +4,19 @@ Generic Chrome Mobile Angular Application with Material Design
 This is a generic app framework that can run as a standalone webpage, a chrome
 extension, an android app, or an ios app.  
 
-It will use the tools provided by angular's [material-design](material.angularjs.org) package to provide
+It will use the tools provided by angular's
+[material-design](material.angularjs.org) package to provide
 basic application scaffolding.
 
-![A Generic Chrome App running as a Chrome Extension](docs/images/ChromeExtensionScreenshot.png)
+![A Generic Chrome App running as a Chrome
+Extension](docs/images/ChromeExtensionScreenshot.png)
 
-This is a very early work in progress.
+This is a very early work in progress. The material-design repo provided by
+angular is not yet in a official distribution, so some hacks are required to
+get this to compile and deploy.  When bundling the android app, you should remove
+all the node_modules under the material design bower component used to build the
+dist directory.  Really, all directories other than "dist" can be discarded or
+ignored.
 
 Features
 --------

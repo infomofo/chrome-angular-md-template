@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('genericChromeMdApp')
-  .controller('MainCtrl', function ($scope, $timeout, $materialSidenav, $materialToast, $animate) {
+  .controller('MainCtrl', function ($scope, $timeout, $materialSidenav,
+    $materialToast, $animate, $materialDialog) {
     $scope.toggleMenu = function() {
       $timeout(function() {
         $materialSidenav('left').toggle();
@@ -27,6 +28,18 @@ angular.module('genericChromeMdApp')
         template: 'Hello, ' + Math.random(),
         duration: 2000,
         position: $scope.getToastPosition()
+      });
+    };
+
+    $scope.dialog = function(e) {
+      $materialDialog({
+        templateUrl: 'views/dialog.html',
+        targetEvent: e,
+        controller: ['$scope', '$hideDialog', function($scope, $hideDialog) {
+          $scope.close = function() {
+            $hideDialog();
+          };
+        }]
       });
     };
   })
