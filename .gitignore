@@ -1,0 +1,7 @@
+.idea
+node_modules
+dist
+.tmp
+www/bower_components
+platforms/*
+plugins/*
