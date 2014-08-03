@@ -54,6 +54,7 @@ First time Setup
 3. As material design by angular is not currently packaged as a proper bower
 module, you'll have to [build it yourself](https://github.com/angular/material#development)
 
+   0. ``git clone git@github.com:angular/material.git www/bower_components/material-design``
    1. ``cd www/bower_components/material-design``
    2. ``npm install``
    3. ``bower install``
