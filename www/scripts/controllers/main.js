@@ -9,25 +9,10 @@ angular.module('genericChromeMdApp')
       });
     };
 
-    $scope.toastPosition = {
-      bottom: true,
-      top: false,
-      left: true,
-      right: false,
-      fit: false
-    };
-
-    $scope.getToastPosition = function() {
-      return Object.keys($scope.toastPosition)
-        .filter(function(pos) { return $scope.toastPosition[pos]; })
-        .join(' ');
-    };
-
     $scope.toastIt = function() {
       $materialToast({
-        template: 'Hello, ' + Math.random(),
-        duration: 2000,
-        position: $scope.getToastPosition()
+        template: '<material-toast>Hello!</material-toast>',
+        duration: 3000
       });
     };
 

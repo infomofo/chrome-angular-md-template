@@ -11,13 +11,9 @@ basic application scaffolding.
 ![A Generic Chrome App running as a Chrome
 Extension](docs/images/ChromeExtensionScreenshot.png)
 
-This is a very early work in progress. The material-design repo provided by
-angular is not yet in a official distribution, so some hacks are required to
-get this to compile and deploy.  When bundling the android app, you should remove
-all the node_modules under the material design bower component used to build the
-dist directory.  Really, all directories other than "dist" can be discarded or
-ignored.
+This is a very early work in progress. 
 
+The material-design repo provided by angular is now an official bower distribution.
 Features
 --------
 
@@ -51,19 +47,9 @@ First time Setup
 
 1. run ``npm install`` to initialize node modules
 2. run ``bower install`` to initialize bower dependencies
-3. As material design by angular is not currently packaged as a proper bower
-module, you'll have to [build it yourself](https://github.com/angular/material#development)
-
-   0. ``git clone git@github.com:angular/material.git www/bower_components/material-design``
-   1. ``cd www/bower_components/material-design``
-   2. ``npm install``
-   3. ``bower install``
-   4. ``npm install gulp``
-   5. ``gulp build``
-
-4. run ``cca pre-prepare`` to initialize cordova plugins
-5. run ``cca platform add ios`` to add ios platform to project
-6. run ``./initializePlugins.sh`` to initialize plugins
+3. run ``cca pre-prepare`` to initialize cordova plugins
+4. run ``cca platform add ios`` to add ios platform to project
+5. run ``./initializePlugins.sh`` to initialize plugins
 
 
 ### Copying settings from chrome extension to android app
