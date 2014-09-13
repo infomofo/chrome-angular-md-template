@@ -1,22 +1,91 @@
     <material-tabs selected="selectedIndex" noink>
         <material-tab>
           <material-tab-label>Toast</material-tab-label>
-          <material-button ng-click="toastIt()">
-            Simple Toast
-          </material-button>
+
+    <section layout="vertical" layout-sm="horizontal" layout-align="center center">
+      <material-button class="material-button-raised" ng-click="toastIt()">Button</material-button>
+    </section>
         </material-tab>
         <material-tab label="Dialog">
-          <material-button ng-click="dialog($event)">
+    <section layout="vertical" layout-sm="horizontal" layout-align="center center">
+          <material-button class="material-button-raised material-button-colored" ng-click="dialog($event)">
               Open a Dialog
           </material-button>
+          </section>
         </material-tab>
         <material-tab label="Form">
-        <material-input-group fid="i6" class="material-input-group-theme-orange ng-isolate-scope">
-          <label for="i6">Description</label><input id="i6" type="text" ng-model="data.description" class="ng-pristine ng-valid ng-touched">
-        </material-input-group>
+          <material-toolbar class="material-theme-dark material-tall">
+    <div class="material-toolbar-tools">
+      <ig fid="t1" class="material-input-group-theme-light material-input-group-inverted"></ig>
+      <ig fid="t2" class="material-input-group-theme-light-blue material-input-group-inverted"></ig>
+    </div>
+  </material-toolbar>
+
+  <material-content>
+    <form style="padding-left: 20px;">
+      <ig fid="i1" class="material-input-group-theme-light"></ig>
+      <ig fid="i2" class="material-input-group-theme-light-blue"></ig>
+      <ig fid="i3" class="material-input-group-theme-dark"></ig>
+      <ig fid="i4" class="material-input-group-theme-green"></ig>
+      <ig fid="i5" class="material-input-group-theme-yellow"></ig>
+      <ig fid="i6" class="material-input-group-theme-orange"></ig>
+      <ig fid="i7" class="material-input-group-theme-purple"></ig>
+      <ig fid="i8" class="material-input-group-theme-red"></ig>
+    </form>
+  </material-content>
         </material-tab>
-        <material-tab label="Content">
-        <material-content>
+        <material-tab label="List">
+  <material-content>
+
+    <material-list>
+
+      <material-item ng-repeat="item in todos">
+        <material-item-content>
+          <div class="material-tile-left">
+              <img ng-src="{{item.face}}" class="face" alt="{{item.who}}">
+          </div>
+          <div class="material-tile-content">
+            <h2>{{item.what}}</h2>
+            <h3>{{item.who}}</h3>
+            <p>
+              {{item.notes}}
+            </p>
+          </div>
+        </material-item-content>
+      </material-item>
+
+    </material-list>
+
+  </material-content>
+        </material-tab>
+        <material-tab label="Inputs">
+  <material-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
+    Checkbox 1: {{ data.cb1 }}
+  </material-checkbox>
+
+  <material-checkbox ng-model="data.cb2" aria-label="Checkbox 2" ng-true-value="'yup'" ng-false-value="'nope'">
+    Checkbox 2: {{ data.cb2 }}
+  </material-checkbox>
+
+
+  <material-radio-group ng-model="data.group1">
+
+    <material-radio-button value="1" aria-label="Label 1">
+      Label 1
+    </material-radio-button>
+
+    <material-radio-button value="2" noink>
+      Label 2
+    </material-radio-button>
+
+    <material-radio-button value="3" aria-label="Label 3">
+      Label 3
+    </material-radio-button>
+
+  </material-radio-group>
+  </material-tab>
+        <material-tab label="Content" layout="vertical">
+        <material-content  class="material-content-padding">
 <p>
 
 Qui utamur tacimates quaestio ad, quod graece omnium ius ut. Pri ut vero debitis interpretaris, qui cu mentitum adipiscing disputationi. Voluptatum mediocritatem quo ut. Fabulas dolorem ei has, quem molestie persequeris et sit.
@@ -27,6 +96,14 @@ Fastidii efficiendi no vis, autem aeterno malorum an quo. Per et meis necessitat
 <p>
 
 Id utinam nullam voluptaria cum, meis novum doming no eum, mei ex nusquam eligendi offendit. Eu sit movet praesent persequeris, dolores lobortis ullamcorper eu vel, ea vis possit feugiat. Quo ut dictas suscipit contentiones, an quis quodsi sanctus qui. Duis iudicabit an est, te quot nonumy putant mei. Quo insolens interpretaris et, per ex illud albucius mentitum.
+</p>
+<p>
+
+Eu labores invidunt eloquentiam vis. Usu vitae fastidii expetendis id. Modus soleat prompta eos ad, ea mea dolore ubique definitiones, pri no lorem audire. Vivendo lucilius pro ut, at sumo quidam legimus cum. Mentitum incorrupte ex vis.
+</p>
+<p>
+
+Eu labores invidunt eloquentiam vis. Usu vitae fastidii expetendis id. Modus soleat prompta eos ad, ea mea dolore ubique definitiones, pri no lorem audire. Vivendo lucilius pro ut, at sumo quidam legimus cum. Mentitum incorrupte ex vis.
 </p>
 <p>
 

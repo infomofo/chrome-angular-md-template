@@ -1,8 +1,18 @@
   <material-toolbar class="material-theme-dark">
+
     <div class="material-toolbar-tools">
-      <a ng-click="toggleMenu()">
+
+      <material-button ng-click="toggleMenu()">
         <i class="fa fa-bars"></i>
-      </a>
-      <span class="material-flex">Toolbar: dark-theme</span>
+      </material-button>
+      <span>My App's Title</span>
+
+      <!-- fill up the space between left and right area -->
+      <span flex></span>
+
+      <material-button>
+        <i class="fa fa-user"></i>
+      </material-button>
     </div>
+
   </material-toolbar>

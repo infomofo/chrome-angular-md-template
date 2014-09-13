@@ -9,3 +9,30 @@
   border-bottom: 1px solid #eee;
   text-overflow: ellipsis;
 }
+
+
+section {
+  background: #f7f7f7;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1em;
+  position: relative !important;
+  padding-bottom: 10px;
+}
+material-content {
+  margin-right: 7px;
+}
+section material-button,
+section .material-button {
+  display: block;
+  width: 10em;
+  margin: 1em;
+  line-height: 25px;
+}
+.label {
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  color: #ccc;
+  font-size: 14px;
+}

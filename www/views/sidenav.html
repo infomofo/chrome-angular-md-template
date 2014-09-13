@@ -1,27 +1,12 @@
-  <material-sidenav class="material-sidenav-left material-whiteframe-z2" component-id="left">
-    <div ng-controller="LeftCtrl">
-      <h3>Sidenav left</h3>
-      <material-list>
-        <material-item>
-          <div class="menu-item">
-            <h3><i class="fa fa-gear"></i> Item 1</h3>
-          </div>
-        </material-item>
-        <material-item>
-          <div class="menu-item">
-            <h3><i class="fa fa-gear"></i> Item 1</h3>
-          </div>
-        </material-item>
-        <material-item>
-          <div class="menu-item">
-            <h3><i class="fa fa-gear"></i> Item 1</h3>
-          </div>
-        </material-item>
-        <material-item>
-          <div class="menu-item">
-            <h3><i class="fa fa-gear"></i> Item 1</h3>
-          </div>
-        </material-item>
-      </material-list>
-    </div>
-  </material-sidenav>
+    <material-sidenav class="material-sidenav-left material-whiteframe-z2" component-id="left">
+
+      <material-toolbar class="material-theme-indigo">
+        <h1 class="material-toolbar-tools">Sidenav Left</h1>
+      </material-toolbar>
+      <material-content class="material-content-padding" ng-controller="LeftCtrl">
+        <material-button ng-click="close()" class="material-button-colored" hide-md>
+          Close Sidenav Left
+        </material-button>
+      </material-content>
+
+    </material-sidenav>
