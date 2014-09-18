@@ -5,6 +5,7 @@
   "devDependencies": {
     "karma": "~0.12.23",
     "karma-chrome-launcher": "0.1.4",
+    "karma-cli": "0.0.4",
     "karma-firefox-launcher": "~0.1.3",
     "karma-jasmine": "0.1.5",
     "karma-ng-html2js-preprocessor": "~0.1.0",
@@ -15,7 +16,7 @@
     "node": ">=0.8.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/karma start --single-run"
+    "test": "karma start --single-run"
   },
   "description": "Generic Chrome Mobile Angular Application with Material Design ==============================================================",
   "directories": {
