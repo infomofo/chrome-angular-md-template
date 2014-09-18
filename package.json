@@ -3,27 +3,15 @@
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
-    "karma": "~0.12.23",
-    "karma-chrome-launcher": "0.1.4",
+    "karma": "0.12.23",
     "karma-cli": "0.0.4",
-    "karma-firefox-launcher": "~0.1.3",
     "karma-jasmine": "0.1.5",
-    "karma-ng-html2js-preprocessor": "~0.1.0",
-    "karma-ng-scenario": "~0.1.0", 
-    "ini": "~1.2.0",
-    "karma-phantomjs-launcher": "0.1.4",
-    "karma-script-launcher": "~0.1.0"
-  },
-  "engines": {
-    "node": ">=0.8.0"
+    "karma-phantomjs-launcher": "0.1.4"
   },
   "scripts": {
     "test": "karma start --single-run"
   },
-  "description": "Generic Chrome Mobile Angular Application with Material Design ==============================================================",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "Generic Chrome Mobile Angular Application with Material Design",
   "repository": {
     "type": "git",
     "url": "https://github.com/infomofo/chrome-angular-md-template.git"
