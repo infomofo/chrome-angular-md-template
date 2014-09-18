@@ -13,6 +13,9 @@ module.exports = function(config) {
     files: [
       'www/bower_components/angular/angular.js',
       'www/bower_components/angular-mocks/angular-mocks.js',
+      'www/bower_components/angular-material/angular-material.min.js',
+      'www/bower_components/angular-animate/angular-animate.min.js',
+      'www/bower_components/fastclick/lib/fastclick.js',
       'www/scripts/*.js',
       'www/scripts/**/*.js',
       'test/mock/**/*.js',
