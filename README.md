@@ -14,6 +14,12 @@ Extension](docs/images/ChromeExtensionScreenshot.png)
 This is a very early work in progress. 
 
 The material-design repo provided by angular is now an official bower distribution.
+
+Build Status
+------------
+
+[![Build Status](https://travis-ci.org/infomofo/chrome-angular-md-template.svg?branch=master)](https://travis-ci.org/infomofo/chrome-angular-md-template)
+
 Features
 --------
 
