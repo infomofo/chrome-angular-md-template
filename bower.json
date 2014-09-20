@@ -10,5 +10,10 @@
     "fastclick": "~1.0.2",
     "angular-material": "~0.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "angular-mocks": "~1.2.24"
+  },
+  "resolutions": {
+    "angular": "1.3.0-rc.1"
+  }
 }
